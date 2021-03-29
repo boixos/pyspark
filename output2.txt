@@ -1,0 +1,2 @@
+Country	Total
+US	21403
