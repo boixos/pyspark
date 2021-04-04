@@ -23,8 +23,10 @@ def main(cpus):
   df = df.filter(df.LONGITUDE >= -90)
 #   df.show()
   df = df.toPandas()  
-  df.to_csv(outputfile,sep=',',index=False)
+  df["NAME"].to_csv(outputfile,sep=',',index=False)
 
+  
+  
 
 if __name__ == "__main__":
     # global no_of_cpu
